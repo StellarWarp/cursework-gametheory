@@ -1,0 +1,19 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.xdv
+
+# Generated PDFs (optional - uncomment if you don't want to track PDFs)
+# *.pdf
+
+# Generated images for preview
+*.png
+
+# OS files
+.DS_Store
+Thumbs.db
