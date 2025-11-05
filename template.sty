@@ -1,0 +1,37 @@
+% LaTeX Template Style File
+% Two-column A4 layout with full-width abstract and keywords
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{template}[2025/11/05 Custom Two-Column Template]
+
+% Required packages
+\RequirePackage{geometry}
+\RequirePackage{abstract}
+
+% Page setup - A4 paper with narrow margins for two-column layout
+\geometry{
+    a4paper,
+    top=20mm,
+    bottom=20mm,
+    left=15mm,
+    right=15mm,
+    columnsep=7mm
+}
+
+% Configure abstract to span full width in two-column mode
+\renewcommand{\abstitlestyle}[1]{{\bfseries #1}}
+\renewcommand{\abstractnamefont}{\normalfont\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont\small}
+
+% Remove indentation from abstract
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+\setlength{\absparindent}{0pt}
+
+% Keywords command - for use in full-width header
+\newcommand{\keywords}[1]{%
+    \vspace{0.5em}
+    \noindent\textbf{Key words:} #1
+}
+
+\endinput

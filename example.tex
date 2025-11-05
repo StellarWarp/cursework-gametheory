@@ -1,0 +1,76 @@
+\documentclass[a4paper,twocolumn]{article}
+\usepackage{template}
+\usepackage[UTF8]{ctex}  % Support for Chinese characters
+\usepackage{lipsum}      % For dummy text
+
+\title{示例论文标题\\Example Paper Title}
+\author{作者姓名\\Author Name\\
+        单位名称\\Institution Name}
+\date{}
+
+\begin{document}
+
+% Title
+\maketitle
+
+% Abstract and keywords need to span both columns
+% We use \twocolumn[...] to create full-width content at the top
+\twocolumn[
+\begin{@twocolumnfalse}
+
+% Abstract
+\begin{abstract}
+\noindent
+This is an example abstract that spans the full width of the page across both columns. The abstract provides a brief summary of the paper's content, methodology, and findings. It should be concise yet informative, typically between 150-250 words. The text uses a smaller font size than the main body text and has no first-line indentation as specified in the requirements.
+
+这是一个跨越两栏全宽显示的摘要示例。摘要简要概述了论文的内容、方法和发现。它应该简洁而信息丰富，通常在150-250字之间。文本使用比正文稍小的字体，并且按照要求首行不缩进。
+\end{abstract}
+
+% Keywords
+\keywords{game theory; Nash equilibrium; strategy; optimization; 博弈论; 纳什均衡}
+
+\vspace{1em}
+\end{@twocolumnfalse}
+]
+
+% Main content starts here in two-column format
+\section{Introduction}
+\lipsum[1-2]
+
+\section{Background}
+\lipsum[3-4]
+
+\subsection{Related Work}
+\lipsum[5]
+
+\subsection{Theoretical Framework}
+\lipsum[6]
+
+\section{Methodology}
+\lipsum[7-8]
+
+\subsection{Experimental Setup}
+\lipsum[9]
+
+\subsection{Data Collection}
+\lipsum[10]
+
+\section{Results}
+\lipsum[11-12]
+
+\subsection{Analysis}
+\lipsum[13]
+
+\subsection{Discussion}
+\lipsum[14]
+
+\section{Conclusion}
+\lipsum[15-16]
+
+\section*{References}
+\begin{thebibliography}{99}
+\bibitem{ref1} Author A. (2023). \textit{Title of Paper}. Journal Name, 10(2), 123-145.
+\bibitem{ref2} Author B. (2023). \textit{Another Paper Title}. Conference Proceedings, 456-478.
+\end{thebibliography}
+
+\end{document}
